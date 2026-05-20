@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Pesantren Al-Qur'an Modern</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- 1. NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100/80 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between relative">
+            <div class="flex items-center gap-2">
+                <!-- Logo -->
+                <div class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">P</div>
+                <span class="font-bold text-lg tracking-tight text-slate-900">PESANTREN <span class="text-emerald-600">MODERN</span></span>
+            </div>
+            
+            <!-- Menu Navigasi (Sembunyi di layar kecil) -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#tentang" class="hover:text-emerald-600 transition">Tentang Kami</a>
+                <a href="#program" class="hover:text-emerald-600 transition">Program</a>
+                <a href="#fasilitas" class="hover:text-emerald-600 transition">Fasilitas</a>
+                <a href="#daftar" class="hover:text-emerald-600 transition">Pendaftaran</a>
+            </div>
+            
+            <!-- Tombol Kontak (Sembunyi di layar kecil) -->
+            <div class="hidden md:block">
+                <a href="https://wa.me/6281234567890" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-sm shadow-emerald-600/10 transition block">
+                    Hubungi Kami
+                </a>
+            </div>
+
+            <!-- Tombol Hamburger Menu (Hanya di layar kecil) -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-slate-600 hover:text-emerald-600 focus:outline-none transition-transform duration-300">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown (Dengan animasi soft & transisi) -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-100 shadow-xl transition-all duration-300 ease-in-out opacity-0 invisible -translate-y-2 md:hidden">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#tentang" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 transition">Tentang Kami</a>
+                <a href="#program" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 transition">Program</a>
+                <a href="#fasilitas" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 transition">Fasilitas</a>
+                <a href="#daftar" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 transition">Pendaftaran</a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="mt-4 block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl text-base font-medium transition shadow-md">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="relative bg-gradient-to-b from-emerald-50/50 via-white to-slate-50 py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center md:text-left">
+                <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Penerimaan Santri Baru Gelombang I
+                </span>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                    Membentuk Generasi <span class="text-emerald-600">Rabbani</span> & Berakhlak Mulia
+                </h1>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
+                    Mulai langkah awal pendidikan terbaik putra-putri Anda. Kami memadukan keluhuran akhlak pesantren tradisional dengan pola pikir modern dan mandiri.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start pt-2">
+                    <a href="#daftar" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl font-medium shadow-md transition text-center">
+                        Daftar Sekarang
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-medium transition text-center flex items-center justify-center gap-2">
+                        Tanya Via WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Area Foto Hero -->
+            <div class="relative max-w-md mx-auto md:max-w-none w-full aspect-[4/3] bg-slate-200 rounded-2xl overflow-hidden shadow-xl shadow-slate-200/50 border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&q=80&w=800" alt="Suasana Pondok Pesantren" class="w-full h-full object-cover" />
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. SAMBUTAN PENGASUH -->
+    <section id="tentang" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 -mt-24">
+        <div class="bg-white rounded-2xl p-8 md:p-12 border border-slate-100 shadow-sm grid md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1 flex flex-col items-center text-center">
+                <div class="w-32 h-32 md:w-40 md:h-40 bg-slate-200 rounded-full overflow-hidden mb-4 border-2 border-emerald-500 p-1">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200" alt="Pengasuh Pondok" class="w-full h-full object-cover rounded-full" />
+                </div>
+                <h3 class="font-bold text-slate-900">Ust. KH. Abdullah Syauqi</h3>
+                <p class="text-xs text-emerald-600 font-medium">Pengasuh Pondok Pesantren</p>
+            </div>
+            <div class="md:col-span-2 space-y-4">
+                <div class="text-emerald-600 text-4xl font-serif">“</div>
+                <p class="text-slate-600 italic leading-relaxed text-sm sm:text-base -mt-4">
+                    "Pendidikan bukan sekadar mentransfer ilmu, melainkan menanamkan adab dan membentuk karakter kepemimpinan yang berlandaskan Al-Qur'an. Meskipun kami memulai dari langkah yang sederhana, komitmen kami utuh untuk melahirkan generasi yang selamat agamanya dan sukses masa depannya."
+                </p>
+                <div class="h-px bg-slate-100 my-2"></div>
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Visi Utama Kami</p>
+                <p class="text-sm text-slate-600">Menjadi pusat pembinaan generasi muda yang unggul dalam hafalan Al-Qur'an, kuat dalam literasi kitab klasik, dan mandiri secara kepribadian.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. PROGRAM UNGGULAN -->
+    <section id="program" class="py-16 bg-slate-100/60 pt-24 -mt-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Fokus Pendidikan Kami</h2>
+                <p class="text-sm sm:text-base text-slate-600">Kurikulum terpadu yang dirancang khusus untuk pembentukan karakter santri sejak dini.</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Program 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">01</div>
+                    <h3 class="font-bold text-slate-900 mb-2">Tahfidzul Qur'an</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Target hafalan yang terukur secara realistis dengan metode setoran (ziyadah) dan pengulangan (murojaah) yang menyenangkan.</p>
+                </div>
+                <!-- Program 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">02</div>
+                    <h3 class="font-bold text-slate-900 mb-2">Kajian Kitab Turats</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Dasar-dasar ilmu fikih harian, akidah akhlak, dan tartil Al-Qur'an agar santri paham dasar hukum ibadah dengan benar.</p>
+                </div>
+                <!-- Program 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition group">
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold mb-4 group-hover:bg-emerald-600 group-hover:text-white transition">03</div>
+                    <h3 class="font-bold text-slate-900 mb-2">Kemandirian & Adab</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Pembiasaan adab harian, disiplin waktu, kerapian diri, serta pelatihan mental kepemimpinan dasar di asrama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FASILITAS -->
+    <section id="fasilitas" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 -mt-24">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Lingkungan Belajar</h2>
+            <p class="text-sm sm:text-base text-slate-600">Suasana belajar yang bersih, terjaga, dan kondusif demi kenyamanan fisik dan mental santri.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="group relative aspect-square bg-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=400" alt="Ruang Kelas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent p-4">
+                    <p class="text-white text-sm font-semibold">Ruang Belajar Nyaman</p>
+                </div>
+            </div>
+            <div class="group relative aspect-square bg-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=400" alt="Kamar Asrama" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent p-4">
+                    <p class="text-white text-sm font-semibold">Asrama Bersih & Rapi</p>
+                </div>
+            </div>
+            <div class="group relative aspect-square bg-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?auto=format&fit=crop&q=80&w=400" alt="Musholla" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent p-4">
+                    <p class="text-white text-sm font-semibold">Musholla Utama</p>
+                </div>
+            </div>
+            <div class="group relative aspect-square bg-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com/photo-1603228254113-27d42fb59f2a?auto=format&fit=crop&q=80&w=400" alt="Halaman Terbuka" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent p-4">
+                    <p class="text-white text-sm font-semibold">Area Terbuka Hijau</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. INFORMASI PENDAFTARAN -->
+    <section id="daftar" class="py-16 bg-emerald-900 text-emerald-100 pt-24 -mt-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 grid lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Kolom Info Alur -->
+            <div class="space-y-8">
+                <div class="space-y-2 text-center lg:text-left">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white">Alur Pendaftaran Sederhana</h2>
+                    <p class="text-emerald-200/80 text-sm">Kami mengutamakan proses silaturahmi kekeluargaan tanpa birokrasi yang rumit.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-emerald-800/40 border border-emerald-700/50 p-5 rounded-xl flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h4 class="font-semibold text-white text-base">Isi Formulir Online</h4>
+                            <p class="text-sm text-emerald-200/70 mt-1">Klik tombol Google Form di samping untuk mengisi data lengkap calon santri dan orang tua secara mandiri.</p>
+                        </div>
+                    </div>
+                    <div class="bg-emerald-800/40 border border-emerald-700/50 p-5 rounded-xl flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h4 class="font-semibold text-white text-base">Konfirmasi via WhatsApp</h4>
+                            <p class="text-sm text-emerald-200/70 mt-1">Setelah mengisi form, hubungi nomor admin kami untuk konfirmasi jadwal kunjungan ke pondok pesantren.</p>
+                        </div>
+                    </div>
+                    <div class="bg-emerald-800/40 border border-emerald-700/50 p-5 rounded-xl flex gap-4 items-start">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <h4 class="font-semibold text-white text-base">Silaturahmi & Wawancara</h4>
+                            <p class="text-sm text-emerald-200/70 mt-1">Wali santri dan calon santri hadir ke pondok untuk melihat lingkungan, tes dasar, dan penyelesaian administrasi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Tombol Arah Google Form -->
+            <div id="form-pendaftaran" class="bg-white rounded-2xl p-8 sm:p-10 shadow-xl text-slate-800 flex flex-col justify-center items-center text-center">
+                <!-- Ikon Dokumen -->
+                <div class="w-20 h-20 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-6">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-slate-900 mb-3">Formulir Pendaftaran Lengkap</h3>
+                <p class="text-sm text-slate-500 mb-8 max-w-sm leading-relaxed">
+                    Untuk memudahkan proses pendataan, kami menggunakan sistem Google Form. Silakan klik tombol di bawah ini untuk menuju ke halaman pengisian data.
+                </p>
+                
+                <div class="w-full space-y-4">
+                    <!-- Ganti LINK_GOOGLE_FORM_ANDA dengan link asli form Anda -->
+                    <a href="https://forms.gle/LINK_GOOGLE_FORM_ANDA" target="_blank" class="w-full flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-6 rounded-xl transition shadow-lg shadow-emerald-600/20 group">
+                        <span>Buka Google Form</span>
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </a>
+                    
+                    <div class="bg-slate-50 border border-slate-100 rounded-lg p-4 text-left">
+                        <p class="text-xs font-semibold text-slate-700 mb-1">📌 Siapkan dokumen berikut sebelum mengisi:</p>
+                        <ul class="text-xs text-slate-500 space-y-1 ml-4 list-disc marker:text-emerald-500">
+                            <li>Nomor Induk Kependudukan (NIK) Calon Santri</li>
+                            <li>Nomor Kartu Keluarga (KK)</li>
+                            <li>NISN (Nomor Induk Siswa Nasional) jika ada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-base">P</div>
+                    <span class="font-bold text-base text-white tracking-tight">PESANTREN <span class="text-emerald-500">MODERN</span></span>
+                </div>
+                <p class="text-xs leading-relaxed max-w-sm">
+                    Mencetak generasi tangguh, mandiri, berwawasan luas, dan senantiasa menjaga nilai-nilai luhur kepesantrenan.
+                </p>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Kontak Kami</h4>
+                <p class="text-xs">📍 Jl. Pendidikan No. 123, Kota Nusantara, Indonesia</p>
+                <p class="text-xs">📞 +62 812-3456-7890 (Ust. Admin)</p>
+                <p class="text-xs">✉️ info@pesantrenmodern.sch.id</p>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Media Sosial</h4>
+                <p class="text-xs">Ikuti perkembangan dan dokumentasi harian kami di media sosial resmi.</p>
+                <div class="flex gap-3 text-xs pt-1">
+                    <a href="#" class="hover:text-emerald-500 transition">Instagram</a>
+                    <a href="#" class="hover:text-emerald-500 transition">YouTube</a>
+                    <a href="#" class="hover:text-emerald-500 transition">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-600">
+            &copy; 2026 Pondok Pesantren Modern. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-3.5 rounded-full shadow-xl shadow-green-500/20 transition-all hover:scale-105 group flex items-center gap-2">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.93 0c3.165.001 6.14 1.233 8.377 3.473 2.235 2.24 3.461 5.218 3.459 8.385-.004 6.582-5.34 11.93-11.871 11.93-2.007-.001-3.98-.51-5.731-1.482L0 24zm6.59-4.846c1.6.95 3.182 1.449 4.725 1.451 5.405.002 9.803-4.377 9.806-9.768.001-2.596-1.006-5.037-2.834-6.87C16.517 2.135 14.09 1.13 11.522 1.13c-5.41 0-9.81 4.38-9.813 9.773-.001 1.742.47 3.442 1.362 4.956l-.962 3.513 3.606-.944zm11.304-6.106c-.305-.152-1.808-.893-2.087-.994-.28-.101-.483-.152-.686.152-.204.304-.787.994-.965 1.2-.177.203-.355.228-.66.076-.304-.152-1.284-.474-2.447-1.512-.904-.806-1.513-1.802-1.69-2.105-.177-.304-.019-.469.133-.62.137-.137.305-.355.457-.533.152-.177.203-.304.305-.507.102-.203.051-.38-.025-.533-.076-.152-.686-1.653-.94-2.261-.247-.595-.501-.513-.686-.523-.177-.01-.38-.01-.584-.01-.203 0-.533.076-.812.38-.28.304-1.066 1.042-1.066 2.54 0 1.498 1.091 2.946 1.243 3.149.152.204 2.148 3.282 5.204 4.602.727.314 1.294.502 1.738.643.73.232 1.394.199 1.918.121.584-.087 1.808-.737 2.062-1.45.253-.712.253-1.32.177-1.448-.076-.127-.28-.203-.584-.355z"/></svg>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-out font-medium text-sm whitespace-nowrap">Tanya Kami</span>
+    </a>
+
+    <!-- Script untuk Mobile Menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        // Fungsi untuk mengontrol buka/tutup menu dengan animasi
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                // Saat Menu Buka
+                menu.classList.remove('opacity-0', 'invisible', '-translate-y-2');
+                menu.classList.add('opacity-100', 'visible', 'translate-y-0');
+            } else {
+                // Saat Menu Tutup
+                menu.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                menu.classList.add('opacity-0', 'invisible', '-translate-y-2');
+            }
+        }
+
+        // Event saat tombol hamburger diklik
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Mencegah event langsung men-trigger klik pada document
+            toggleMenu();
+        });
+
+        // Menutup menu jika salah satu tautan di dalam menu diklik
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (isMenuOpen) toggleMenu();
+            });
+        });
+
+        // DETEKSI KLIK DI LUAR: Menutup menu jika user mengklik area di luar navbar
+        document.addEventListener('click', (e) => {
+            if (isMenuOpen && !menu.contains(e.target) && !btn.contains(e.target)) {
+                toggleMenu();
+            }
+        });
+    </script>
+</body>
+</html>
