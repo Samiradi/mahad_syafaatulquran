@@ -178,78 +178,78 @@
     </section>
 
     <!-- 5. FASILITAS (Slider Super Smooth & Fleksibel) -->
-    <section id="fasilitas" class="py-16 pt-24 -mt-24 overflow-hidden">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
-                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Lingkungan Belajar</h2>
-                <p class="text-sm sm:text-base text-slate-600">Suasana belajar yang bersih, terjaga, dan kondusif demi kenyamanan fisik dan mental santri.</p>
-            </div>
+<section id="fasilitas" class="py-16 pt-24 -mt-24 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Lingkungan Belajar</h2>
+            <p class="text-sm sm:text-base text-slate-600">Suasana belajar yang bersih, terjaga, dan kondusif demi kenyamanan fisik dan mental santri.</p>
+        </div>
 
-            <!-- Wrapper Relative -->
-            <div class="relative group">
+        <!-- Wrapper Relative -->
+        <div class="relative group">
+            
+            <!-- Tombol Panah Kiri (Hanya Desktop) -->
+            <button id="slide-left" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-slate-200 text-slate-600 rounded-full items-center justify-center shadow-lg hover:bg-emerald-50 hover:text-emerald-600 hover:scale-110 transition duration-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+
+            <!-- Area Slider -->
+            <div id="slider-fasilitas" class="flex overflow-x-auto snap-x snap-mandatory gap-4 sm:gap-6 pb-10 pt-2 hide-scrollbar scroll-smooth overscroll-x-contain -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
                 
-                <!-- Tombol Panah Kiri (Hanya Desktop) -->
-                <button id="slide-left" class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-slate-200 text-slate-600 rounded-full items-center justify-center shadow-lg hover:bg-emerald-50 hover:text-emerald-600 hover:scale-110 transition duration-300 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
-                </button>
-
-                <!-- Area Slider -->
-                <div id="slider-fasilitas" class="flex overflow-x-auto snap-x snap-mandatory gap-4 sm:gap-6 pb-10 pt-2 hide-scrollbar scroll-smooth overscroll-x-contain -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-                    
-                    <!-- Card Fasilitas 1 -->
-                    <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
-                            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=400" alt="Ruang Kelas" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
-                        </div>
-                        <div class="p-5 flex flex-col flex-grow">
-                            <h4 class="text-base font-bold text-slate-900 mb-2">Ruang Kelas Nyaman</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed">Ruang belajar dilengkapi dengan sirkulasi udara yang baik dan pencahayaan optimal untuk mendukung konsentrasi belajar santri setiap hari.</p>
-                        </div>
+                <!-- Card Fasilitas 1 -->
+                <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=400" alt="Ruang Kelas" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
                     </div>
-
-                    <!-- Card Fasilitas 2 -->
-                    <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
-                            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=400" alt="Asrama" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
-                        </div>
-                        <div class="p-5 flex flex-col flex-grow">
-                            <h4 class="text-base font-bold text-slate-900 mb-2">Asrama Bersih & Rapi</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed">Fasilitas tempat tinggal yang dijaga kebersihannya, melatih santri untuk hidup mandiri dan berdisiplin tinggi dalam merawat barang pribadi.</p>
-                        </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h4 class="text-base font-bold text-slate-900 mb-2">Ruang Kelas Nyaman</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Ruang belajar dilengkapi dengan sirkulasi udara yang baik dan pencahayaan optimal untuk mendukung konsentrasi belajar santri setiap hari.</p>
                     </div>
-
-                    <!-- Card Fasilitas 3 -->
-                    <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
-                            <img src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?auto=format&fit=crop&q=80&w=400" alt="Musholla" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
-                        </div>
-                        <div class="p-5 flex flex-col flex-grow">
-                            <h4 class="text-base font-bold text-slate-900 mb-2">Musholla Utama</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed">Pusat kegiatan ibadah jamaah, setoran tahfidz, dan kajian kitab. Didesain luas dan tenang agar santri khusyuk dalam menjalankan ibadah.</p>
-                        </div>
-                    </div>
-
-                    <!-- Card Fasilitas 4 -->
-                    <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                        <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
-                            <img src="https://images.unsplash.com/photo-1603228254113-27d42fb59f2a?auto=format&fit=crop&q=80&w=400" alt="Halaman" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
-                        </div>
-                        <div class="p-5 flex flex-col flex-grow">
-                            <h4 class="text-base font-bold text-slate-900 mb-2">Area Terbuka Hijau</h4>
-                            <p class="text-sm text-slate-600 leading-relaxed">Fasilitas olahraga dan rekreasi di luar ruangan. Udara yang segar membantu relaksasi santri di sela-sela kepadatan jadwal pesantren.</p>
-                        </div>
-                    </div>
-
                 </div>
 
-                <!-- Tombol Panah Kanan (Hanya Desktop) -->
-                <button id="slide-right" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-slate-200 text-slate-600 rounded-full items-center justify-center shadow-lg hover:bg-emerald-50 hover:text-emerald-600 hover:scale-110 transition duration-300 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
-                </button>
-                
+                <!-- Card Fasilitas 2 -->
+                <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=400" alt="Asrama" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h4 class="text-base font-bold text-slate-900 mb-2">Asrama Bersih & Rapi</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Fasilitas tempat tinggal yang dijaga kebersihannya, melatih santri untuk hidup mandiri dan berdisiplin tinggi dalam merawat barang pribadi.</p>
+                    </div>
+                </div>
+
+                <!-- Card Fasilitas 3 -->
+                <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?auto=format&fit=crop&q=80&w=400" alt="Musholla" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h4 class="text-base font-bold text-slate-900 mb-2">Musholla Utama</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Pusat kegiatan ibadah jamaah, setoran tahfidz, dan kajian kitab. Didesain luas dan tenang agar santri khusyuk dalam menjalankan ibadah.</p>
+                    </div>
+                </div>
+
+                <!-- Card Fasilitas 4 -->
+                <div class="snap-center snap-always flex-none w-[85vw] sm:w-[340px] bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col group/card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-200">
+                        <img src="https://images.unsplash.com/photo-1603228254113-27d42fb59f2a?auto=format&fit=crop&q=80&w=400" alt="Halaman" class="w-full h-full object-cover group-hover/card:scale-105 transition duration-700" />
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h4 class="text-base font-bold text-slate-900 mb-2">Area Terbuka Hijau</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Fasilitas olahraga dan rekreasi di luar ruangan. Udara yang segar membantu relaksasi santri di sela-sela kepadatan jadwal pesantren.</p>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Tombol Panah Kanan (Hanya Desktop) -->
+            <button id="slide-right" class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white border border-slate-200 text-slate-600 rounded-full items-center justify-center shadow-lg hover:bg-emerald-50 hover:text-emerald-600 hover:scale-110 transition duration-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+            
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- 6. INFORMASI PENDAFTARAN -->
     <section id="daftar" class="py-16 bg-emerald-900 text-emerald-100 pt-24 -mt-24">
@@ -332,8 +332,8 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
-                    <img src="logo-footer.png" alt="Logo Pesantren" class="h-10 w-auto object-contain" />
-                    <span class="font-bold text-base text-white tracking-tight">PESANTREN <span class="text-emerald-500">MODERN</span></span>
+                    <img src="./images/logo-syafaatul2.png" alt="Logo Pesantren" class="h-10 w-auto object-contain" />
+                    <span class="font-bold text-base text-white tracking-tight">MA'HAD <span class="text-emerald-500">SYAFA'ATUL QUR'AN</span></span>
                 </div>
                 <p class="text-xs leading-relaxed max-w-sm">
                     Mencetak generasi tangguh, mandiri, berwawasan luas, dan senantiasa menjaga nilai-nilai luhur kepesantrenan.
@@ -349,14 +349,14 @@
                 <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Media Sosial</h4>
                 <p class="text-xs">Ikuti perkembangan dan dokumentasi harian kami di media sosial resmi.</p>
                 <div class="flex gap-4 pt-2">
-                    <a href="#" class="hover:scale-110 hover:opacity-80 transition-all duration-300" aria-label="Instagram"><img src="instagram.png" alt="Ikon Instagram" class="w-6 h-6 object-contain" /></a>
-                    <a href="#" class="hover:scale-110 hover:opacity-80 transition-all duration-300" aria-label="YouTube"><img src="youtube.png" alt="Ikon YouTube" class="w-6 h-6 object-contain" /></a>
-                    <a href="#" class="hover:scale-110 hover:opacity-80 transition-all duration-300" aria-label="Facebook"><img src="facebook.png" alt="Ikon Facebook" class="w-6 h-6 object-contain" /></a>
+                    <a href="#" class="hover:scale-110 hover:opacity-80 transition-all duration-300" aria-label="Instagram"><img src="./images/tem cada vídeo doído  no Instagram 😂😂😂😅.jpg" alt="Ikon Instagram" class="w-6 h-6 object-contain" /></a>
+                    <a href="#" class="hover:scale-110 hover:opacity-80 transition-all duration-300" aria-label="YouTube"><img src="./images/FaceBook.jpg" alt="Ikon YouTube" class="w-6 h-6 object-contain" /></a>
+                    <a href="#" class="hover:scale-110 hover:opacity-80 transition-all duration-300" aria-label="Facebook"><img src="./images/Whatsapp logo.jpg" alt="Ikon Facebook" class="w-6 h-6 object-contain" /></a>
                 </div>
             </div>
         </div>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-600">
-            &copy; 2026 Pondok Pesantren Modern. All rights reserved.
+            &copy; 2026 Ma'had Syafa'atul Qur'an Bontang. All rights reserved.
         </div>
     </footer>
 
@@ -419,26 +419,27 @@
             }
         }
 
-        // 3. SLIDER FASILITAS (Dynamic Scroll Horizontal)
-        const slider = document.getElementById('slider-fasilitas');
-        const btnLeft = document.getElementById('slide-left');
-        const btnRight = document.getElementById('slide-right');
+       // SLIDER FASILITAS (Dynamic Scroll Horizontal)
+const slider = document.getElementById('slider-fasilitas');
+const btnLeft = document.getElementById('slide-left');
+const btnRight = document.getElementById('slide-right');
 
-        if(slider && btnLeft && btnRight) {
-            const getScrollAmount = () => {
-                const cardWidth = slider.firstElementChild.offsetWidth;
-                const gap = parseFloat(getComputedStyle(slider).gap) || 24; 
-                return cardWidth + gap;
-            };
+if(slider && btnLeft && btnRight) {
+    const getScrollAmount = () => {
+        // Ambil lebar 1 card + jarak gap secara otomatis
+        const cardWidth = slider.firstElementChild.offsetWidth;
+        const gap = parseFloat(getComputedStyle(slider).gap) || 24; 
+        return cardWidth + gap;
+    };
 
-            btnLeft.addEventListener('click', () => {
-                slider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-            });
+    btnLeft.addEventListener('click', () => {
+        slider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
 
-            btnRight.addEventListener('click', () => {
-                slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
-            });
-        }
+    btnRight.addEventListener('click', () => {
+        slider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
+}
     </script>
 </body>
 </html>
